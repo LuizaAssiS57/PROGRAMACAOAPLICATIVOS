@@ -7,11 +7,23 @@
 
 body {
     background-color: #efc1f3;
-    background-image: url("assets/shanghai.jpg");
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.index {
+    background-image: url("assets/shanghai.jpg");
+}
+
+.segunda-pagina {
+    background-image: url("assets/SHENZEN.png");
+}
+
+.terceira-pagina {
+    background-image: url("assets/chongqing.webp");
 }
 
 img {
