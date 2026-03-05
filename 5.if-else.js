@@ -12,4 +12,4 @@ if (idade >= 18) {
     console.log("Bebê")
 }
 
-// Menor que 2 ano: Bebê.
+// Menor que 2 anos: Bebê.
