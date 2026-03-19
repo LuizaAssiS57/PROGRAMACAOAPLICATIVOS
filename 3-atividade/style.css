@@ -1,0 +1,99 @@
+/* Importando uma fonte fofa e arredondada */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body {
+    background-color: #f0fff0; /* Verde bem clarinho */
+    background-image: radial-gradient(#d4f5d4 2px, transparent 2px);
+    background-size: 30px 30px;
+    font-family: 'Fredoka', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative; /* Importante para o posicionamento absoluto dos limões */
+    overflow-x: hidden; /* Evita barra de rolagem horizontal se o limão cair na borda */
+}
+
+.limao-confete {
+    position: fixed; /* Fixado na tela, não rola com o conteúdo */
+    top: -50px; /* Começa acima do topo visível da tela */
+    font-size: 30px; /* Um pouco maior para ser mais visível */
+    user-select: none; /* Impede que o usuário selecione o texto (emoji) */
+    pointer-events: none; /* Impede que o limão interaja com o mouse */
+    z-index: 9999; /* Garante que fique acima de TODOS os elementos */
+    animation: cairDoTopo 3s linear forwards; /* Usa a animação ajustada */
+}
+
+.container {
+    background-color: #ffffff;
+    border: 4px solid #b2d300; /* Verde limão vibrante */
+    border-radius: 30px;
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 10px 10px 0px #eef786; /* Sombra sólida amarela */
+}
+
+img {
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(3px 3px 0px #b2d300);
+}
+
+h2 {
+    color: #4CAF50; /* Verde folha */
+    font-size: 2rem;
+    margin-top: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    background: #f9ffd1;
+    padding: 15px;
+    border-radius: 15px;
+    border-left: 5px solid #fff100; /* Detalhe em amarelo limão */
+}
+
+/* Dica: Adicione estilos para os inputs e botões caso vá criar o formulário */
+input {
+    border: 2px solid #b2d300;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    width: 80%;
+}
+
+button {
+    background-color: #b2d300;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:hover {
+    background-color: #4CAF50;
+    transform: scale(1.05);
+}
+
+@keyframes cairDoTopo {
+    0% {
+        transform: translateY(0) rotate(0deg); /* No início, acima da tela */
+        opacity: 1; /* Totalmente visível */
+    }
+    100% {
+        transform: translateY(110vh) rotate(360deg); 
+        opacity: 0; 
+    }
+}
