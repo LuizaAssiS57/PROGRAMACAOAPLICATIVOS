@@ -16,4 +16,4 @@ EXPOSE 5173
 
 # Comando para rodar o Vite com a flag --host
 # Isso é obrigatório para o Docker conseguir acessar o servidor interno
-CMD ["npm", "run", "dev", "--", "--host"]
+CMD ["npm", "run", "dev", "--", "--host"] 
