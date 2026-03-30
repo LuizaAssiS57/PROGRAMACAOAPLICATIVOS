@@ -1,0 +1,73 @@
+/* Importando fonte fofinha */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.info-aluno {
+  background: #fff0f5;
+  border: 3px solid #ffb6c1;
+  border-radius: 25px;
+  padding: 25px 20px 20px;
+  width: 320px;
+  margin: 30px auto;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.6);
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  text-align: center;
+}
+
+/* Avatar (Hello Kitty style) */
+.info-aluno .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url('https://i.imgur.com/Z6X6K0K.png') no-repeat center/cover;
+  border: 3px solid #ff9ac1;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+/* Título */
+.info-aluno h2 {
+  color: #ff4f93;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Linhas de informação */
+.info-aluno p {
+  background: #ffe4ec;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 8px 0;
+  color: #c2185b;
+  border: 1px solid #ffb6c1;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+/* Hover delicado */
+.info-aluno p:hover {
+  background: #ffd6e7;
+  transform: scale(1.05);
+}
+
+/* Lacinho no topo */
+.info-aluno::before {
+  content: "🎀";
+  font-size: 28px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+
+/* Corações decorativos */
+.info-aluno::after {
+  content: "💗 💖";
+  font-size: 18px;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}

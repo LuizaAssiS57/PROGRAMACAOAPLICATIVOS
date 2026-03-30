@@ -1,0 +1,76 @@
+/* Fonte estilosa */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Quicksand:wght@400;600&display=swap');
+
+.info-curso {
+  background: linear-gradient(135deg, #1a001f, #2b0033);
+  border: 3px solid #a64dff;
+  border-radius: 25px;
+  padding: 25px 20px 20px;
+  width: 320px;
+  margin: 30px auto;
+  box-shadow: 0 10px 25px rgba(166, 77, 255, 0.6);
+  font-family: 'Quicksand', sans-serif;
+  position: relative;
+  text-align: center;
+  color: #f3e6ff;
+}
+
+/* Avatar estilo Kuromi */
+.info-curso .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url('https://i.imgur.com/8Km9tLL.png') no-repeat center/cover;
+  border: 3px solid #a64dff;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+}
+
+/* Título */
+.info-curso h2 {
+  color: #d580ff;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  text-shadow: 0 0 8px #a64dff;
+}
+
+/* Informações */
+.info-curso p {
+  background: #2b0033;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 8px 0;
+  color: #e6ccff;
+  border: 1px solid #a64dff;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+/* Hover com vibe "rebelde" */
+.info-curso p:hover {
+  background: #3d004d;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #a64dff;
+}
+
+/* Caveirinha (marca da Kuromi) */
+.info-curso::before {
+  content: "💀";
+  font-size: 26px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+
+/* Detalhe decorativo */
+.info-curso::after {
+  content: "🖤 💜";
+  font-size: 18px;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
+}

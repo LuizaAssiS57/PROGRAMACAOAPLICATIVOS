@@ -1,9 +1,80 @@
-.mensagem h1 {
-    color: blue;
-    margin: 10px 0;
+/* Fonte delicada */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+.mensagem {
+  background: linear-gradient(135deg, #fff0f5, #ffe4ec);
+  border: 3px solid #ffb6c1;
+  border-radius: 25px;
+  padding: 25px 20px 20px;
+  width: 320px;
+  margin: 30px auto;
+  box-shadow: 0 10px 25px rgba(255, 182, 193, 0.5);
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  position: relative;
+  color: #c2185b;
 }
 
+/* Avatar My Melody */
+.mensagem .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: url('https://i.imgur.com/0y0y0y0.png') no-repeat center/cover;
+  border: 3px solid #ff9ac1;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+/* Título */
+.mensagem h2 {
+  color: #ff4f93;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Texto */
 .mensagem p {
-    color: red;
-    margin: 10px 0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #ffc0cb;
+  font-size: 0.95rem;
+}
+
+/* Linha delicada */
+.mensagem hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #ffc0cb, #ff9ac1);
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Hover fofinho */
+.mensagem:hover {
+  transform: scale(1.04);
+  transition: 0.2s ease;
+}
+
+/* Lacinho */
+.mensagem::before {
+  content: "🎀";
+  font-size: 26px;
+  position: absolute;
+  top: -15px;
+  left: 10px;
+}
+
+/* Corações */
+.mensagem::after {
+  content: "💗 💕";
+  font-size: 18px;
+  position: absolute;
+  bottom: -15px;
+  right: 10px;
 }
