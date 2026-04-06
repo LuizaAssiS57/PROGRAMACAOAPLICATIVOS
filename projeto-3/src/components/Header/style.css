@@ -1,0 +1,30 @@
+/* Fundo do corpo sugerido para manter o clima escuro (Opcional) */
+body {
+    background-color: #111111; /* Preto profundo, cor de carvão */
+    margin: 0;
+    font-family: 'Playfair Display', Georgia, serif; /* Fontes clássicas e elegantes */
+}
+
+/* Estilização do Cabeçalho - Tema The Vampire Diaries */
+.header {
+    background: linear-gradient(to bottom, #0a0a0a 0%, #1c0505 100%); /* Transição do preto para um tom muito escuro de sangue */
+    padding: 35px 40px;
+    display: flex;
+    justify-content: center; /* Centraliza o texto para um impacto cinematográfico */
+    align-items: center;
+    border-bottom: 2px solid #660000; /* Linha sutil na cor vermelho-sangue */
+    box-shadow: 0 10px 30px rgba(102, 0, 0, 0.3); /* Um "brilho" vermelho escuro projetado no fundo */
+}
+
+/* Estilização do texto (O Título da Série) */
+.header div {
+    color: #f2f2f2; /* Um branco/prata levemente envelhecido */
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 6px; /* Letras espaçadas dão aquele ar épico de abertura de série */
+    text-transform: uppercase;
+    font-family: 'Cinzel', 'Times New Roman', serif; /* Fonte com serifa para o estilo gótico */
+    
+    /* O grande truque: Uma sombra vermelha brilhante por trás das letras brancas */
+    text-shadow: 0 0 10px rgba(180, 0, 0, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.9);
+}

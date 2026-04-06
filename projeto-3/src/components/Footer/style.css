@@ -1,0 +1,25 @@
+/* Estilização do Rodapé - Tema The Vampire Diaries */
+.footer {
+    background-color: #050505; /* Preto absoluto, bem profundo */
+    text-align: center;
+    padding: 30px 20px;
+    
+    /* Uma linha vermelho-sangue muito escura para separar do conteúdo da página */
+    border-top: 1px solid #4a0000; 
+    
+    /* Sombra projetada para cima, dando uma sensação de profundidade e neblina */
+    box-shadow: 0 -5px 20px rgba(74, 0, 0, 0.15);
+    
+    /* Empurra o footer para o final da tela caso use flexbox no container principal */
+    margin-top: auto; 
+}
+
+/* Estilização do texto dentro do rodapé */
+.footer p {
+    margin: 0;
+    color: #8c8c8c; /* Um tom de cinza prateado, lembrando prata ou cinzas */
+    font-size: 0.95rem;
+    line-height: 1.8;
+    font-family: 'Playfair Display', Georgia, serif; /* Mantém a fonte clássica de diário */
+    letter-spacing: 1px;
+}
