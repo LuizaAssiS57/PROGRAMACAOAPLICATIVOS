@@ -1,0 +1,98 @@
+/* Container principal do formulário */
+.formulario {
+    max-width: 500px;
+    margin: 40px auto; /* Centraliza o formulário e dá um respiro em cima e embaixo */
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(255, 71, 126, 0.1); /* Sombra bem leve e rosada */
+}
+
+/* Títulos das seções */
+.formulario h2 {
+    color: #4a2c35; /* Um tom escuro e quente para leitura confortável */
+    font-size: 1.4rem;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+/* Layout do form */
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Espaço uniforme entre os inputs e o botão */
+}
+
+/* Estilização dos Inputs */
+.formulario input {
+    padding: 14px 16px;
+    border: 1px solid #ffccd5;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #f0c9c9;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao clicar no input (Focus) */
+.formulario input:focus {
+    border-color: #ff477e;
+    box-shadow: 0 0 0 3px rgba(255, 71, 126, 0.2); /* Um "halo" rosa ao redor */
+}
+
+.formulario input::placeholder {
+    color: #b598a0; /* Cor mais suave para o placeholder */
+}
+
+/* Estilização do Botão */
+.formulario button {
+    background: linear-gradient(135deg, #ff477e 0%, #ff758f 100%);
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 8px;
+}
+
+/* Efeito ao passar o mouse no botão */
+.formulario button:hover {
+    transform: translateY(-2px); /* Botão "sobe" um pouquinho */
+    box-shadow: 0 6px 15px rgba(255, 71, 126, 0.3);
+}
+
+/* Linha divisória */
+.formulario hr {
+    border: none;
+    height: 1px;
+    background-color: #ffccd5;
+    margin: 32px 0;
+}
+
+/* Estilização da Lista de Usuários */
+.formulario ul {
+    list-style: none; /* Remove as bolinhas padrão do HTML */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Cada item da lista (card do usuário) */
+.formulario li {
+    background-color: #fff4f6; /* Fundo rosa bem clarinho */
+    padding: 14px 16px;
+    border-radius: 8px;
+    color: #6d4b55;
+    font-size: 0.95rem;
+    border-left: 4px solid #ff477e; /* Detalhe moderno na lateral esquerda */
+    transition: background-color 0.2s;
+}
+
+.formulario li:hover {
+    background-color: #ffe6eb; /* Escurece levemente ao passar o mouse */
+}

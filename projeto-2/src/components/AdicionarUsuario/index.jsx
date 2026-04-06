@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './style.css'
 
-export default function AdicionarUsuarios() {
+export default function AdicionarUsuario() {
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [listaDeUsuarios, setListaDeUsuarios] = useState([])
@@ -20,38 +20,38 @@ export default function AdicionarUsuarios() {
             setEmail('')
         }
     }
+    
+    return (
+        // Criando HTML da página.
+        <div className='formulario'>
+            <h2>Adicionar usuário</h2>
+            <form onSubmit={handlerAdcionarUsuario}>
+                <input 
+                    type="text" 
+                    placeholder= 'Nome' 
+                    value={nome} 
+                    onChange={(e) => setNome(e.target.value)}
+                />
+                <input 
+                    type="text" 
+                    placeholder= 'E-mail' 
+                    value={email} 
+                    onChange={(e) => setEmail(e.target.value)}
+                />
+                <button type='submit'>Adicionar</button>
+            </form>
+    
+            <hr />
+    
+            <h2>Usuários Adicionados</h2>
+            <ul>
+                {/* Usando o map para mostrar cada usuário na lista com base no índice. */}
+                {listaDeUsuarios.map((usuario, index) => (
+                    <li key={index}>
+                        {usuario.nome} - {usuario.email}
+                    </li>
+                ))}
+            </ul>
+        </div>
+    )
 }
-
-return (
-    // Criando HTML da página.
-    <div className='formulario'>
-        <h2>Adicionar usuário</h2>
-        <form onSubmit={handlerAdcionarUsuario}>
-            <input 
-                type="text" 
-                placeholder= 'Nome' 
-                value={nome} 
-                onChange={(e) => (e.target.value)}
-            />
-            <input 
-                type="text" 
-                placeholder= 'E-mail' 
-                value={email} 
-                onChange={(e) => (e.target.value)}
-            />
-            <button type='submit'>Adicionar</button>
-        </form>
-
-        <hr />
-
-        <h2>Usuários Adicionados</h2>
-        <ul>
-            {/* Usando o map para mostrar cada usuário na lista com base no índice. */}
-            {listaDeUsuarios.map((usuario, index) => (
-                <li key={index}>
-                    {usuario.nome} - {usuario.email}
-                </li>
-            ))}
-        </ul>
-    </div>
-)

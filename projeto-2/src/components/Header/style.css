@@ -1,0 +1,27 @@
+/* Reset básico para garantir que o visual fique moderno em qualquer navegador */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #faf8f9; /* Fundo off-white levemente quente */
+}
+
+/* Estilização do Cabeçalho */
+.header {
+    background: linear-gradient(135deg, #c22554 0%, #ff758f 100%); /* Gradiente rosa moderno */
+    color: #ffffff; /* Texto branco para contraste */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(255, 71, 126, 0.25); /* Sombra suave no tom rosa */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+/* Estilização do texto dentro do cabeçalho */
+.header div {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+}

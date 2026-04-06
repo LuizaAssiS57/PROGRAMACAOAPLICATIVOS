@@ -1,0 +1,23 @@
+/* Estilização do Rodapé */
+.footer {
+    background-color: #fff4f6; /* Fundo rosa bem clarinho e minimalista */
+    text-align: center;
+    padding: 24px 20px;
+    border-top: 1px solid #ffccd5; /* Linha rosa clara e sutil para separar do conteúdo */
+    
+    /* Arredondamento no topo para espelhar o estilo do header */
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    
+    /* Se a sua página usar display flex no body/container, isso empurra o footer para baixo */
+    margin-top: auto; 
+}
+
+/* Estilização do texto dentro do rodapé */
+.footer p {
+    margin: 0;
+    color: #6d4b55; /* Um cinza-chumbo com fundo rosado para não usar um preto agressivo */
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+}
