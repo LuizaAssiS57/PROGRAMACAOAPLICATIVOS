@@ -1,0 +1,110 @@
+/* Container principal do formulário */
+.formulario {
+    max-width: 500px;
+    margin: 40px auto; 
+    padding: 32px;
+    background-color: #121212; /* Um tom de carvão muito escuro */
+    border: 1px solid #3a0000; /* Uma borda sutil na cor de sangue seco */
+    border-radius: 8px; /* Cantos menos arredondados para um ar mais clássico */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8), 0 0 15px rgba(102, 0, 0, 0.15); /* Sombra densa com um leve brilho vermelho */
+    font-family: 'Playfair Display', Georgia, serif; /* Mantendo a tipografia do tema */
+}
+
+/* Títulos das seções */
+.formulario h2 {
+    color: #e6e6e6; /* Prata envelhecido */
+    font-size: 1.5rem;
+    margin-top: 0;
+    margin-bottom: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3a0000; /* Linha de separação abaixo do título */
+    padding-bottom: 10px;
+}
+
+/* Layout do form */
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Estilização dos Inputs */
+.formulario input {
+    padding: 14px 16px;
+    background-color: #0a0a0a; /* Fundo do input quase totalmente preto */
+    border: 1px solid #2d2d2d; /* Borda cinza escura */
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #f2f2f2; /* Texto claro para leitura */
+    font-family: 'Playfair Display', Georgia, serif;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao clicar no input (Focus) */
+.formulario input:focus {
+    border-color: #660000; /* Borda fica com cor de sangue ao ser clicada */
+    box-shadow: 0 0 8px rgba(102, 0, 0, 0.4);
+}
+
+.formulario input::placeholder {
+    color: #555555; /* Placeholder escurecido para manter o mistério */
+}
+
+/* Estilização do Botão */
+.formulario button {
+    background: linear-gradient(to bottom, #660000 0%, #330000 100%); /* Gradiente vermelho escuro/vinho */
+    color: #e6e6e6;
+    border: 1px solid #8b0000;
+    padding: 14px;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-family: 'Cinzel', 'Playfair Display', serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+}
+
+/* Efeito ao passar o mouse no botão */
+.formulario button:hover {
+    background: linear-gradient(to bottom, #8b0000 0%, #4a0000 100%); /* Fica um vermelho mais vivo, "sedento" */
+    box-shadow: 0 4px 12px rgba(139, 0, 0, 0.5);
+}
+
+/* Linha divisória */
+.formulario hr {
+    border: none;
+    height: 1px;
+    /* Linha que desaparece nas pontas, parecendo um feitiço ou névoa */
+    background: linear-gradient(to right, transparent, #660000, transparent); 
+    margin: 32px 0;
+}
+
+/* Estilização da Lista de Personagens */
+.formulario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Cada item da lista (card do personagem) */
+.formulario li {
+    background-color: #1a1a1a; /* Fundo cinza chumbo */
+    padding: 14px 16px;
+    border-radius: 4px;
+    color: #cccccc;
+    font-size: 1rem;
+    border-left: 4px solid #660000; /* Marcação lateral em vermelho-sangue */
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.formulario li:hover {
+    background-color: #242424; /* Leve clareada ao passar o mouse */
+    transform: translateX(5px); /* Efeito de deslizar levemente para a direita */
+}
