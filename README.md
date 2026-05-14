@@ -19,3 +19,9 @@ git push
 
 Verificar branches no computados:
 git branch
+
+{
+	"nome": "Maria",
+	"email": "mariacuja@gmail.com",
+	"telefone": "71 96666-5555"
+}
