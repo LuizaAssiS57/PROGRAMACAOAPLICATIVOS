@@ -1,28 +1,19 @@
 {
-  "dependencies": {
-    "cors": "^2.8.6",
-    "express": "^5.2.1",
-    "mysql2": "^3.22.3",
-    "sequelize": "^6.37.8"
-  },
-  "name": "programacaoaplicativos",
+  "name": "downloads",
   "version": "1.0.0",
-  "description": "1) Trazendo possível mudanças do GitHub:\r git pull",
+  "description": "",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LuizaAssiS57/PROGRAMACAOAPLICATIVOS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/LuizaAssiS57/PROGRAMACAOAPLICATIVOS/issues"
-  },
-  "homepage": "https://github.com/LuizaAssiS57/PROGRAMACAOAPLICATIVOS#readme"
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "mysql2": "^3.22.3",
+    "sequelize": "^6.37.8"
+  }
 }
